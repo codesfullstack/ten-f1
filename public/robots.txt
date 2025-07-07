@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /private/
+Allow: /sitemap.xml
+
+Sitemap: https://temperaturein.com/sitemap.xml
+
+User-agent: Instagram
+Disallow:
+
+User-agent: Twitterbot
+Disallow:
+
+User-agent: TikTokBot
+Disallow:
+
+User-agent: *
+Disallow:
+

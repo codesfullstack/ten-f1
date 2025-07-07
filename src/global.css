@@ -1,0 +1,177 @@
+﻿:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background: linear-gradient(to left, #89CFF0 10%, #0F2E66 95%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #000000, #0f5E9a 50%);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  order: 1;
+}
+
+.caja {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+.caja1,
+.caja2 {
+  width: 55px;
+}
+
+.caja1 {
+  justify-content: center;
+}
+
+.caja2 {
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.caja3 {
+  flex-grow: 1;
+  padding-left: 5px;
+  justify-content: flex-start;
+  padding-right: 5px;
+}
+
+.caja4 {
+  flex-grow: 1;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.content {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .caja {
+    height: 70px;
+  }
+
+  .caja1 {
+    flex-basis: 55px;
+    order: 1;
+  }
+
+  .caja4 {
+    order: 1;
+    flex-basis: calc(100% - 110px);
+  }
+
+  .caja3 {
+    order: 2;
+    flex-basis: calc(100% - 110px);
+    border-top: solid;
+    border-color: white;
+    border-width: 1px;
+  }
+
+  .caja2 {
+    flex-basis: 55px;
+    order: 4;
+    border-top: solid;
+    border-color: white;
+    border-width: 1px;
+  }
+
+  .divider-hidden {
+    display: none;
+  }
+
+  .content {
+    margin-top: 153px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .caja {
+    height: 70px;
+  }
+
+  .caja1 {
+    flex-basis: 55px;
+    order: 1;
+  }
+
+  .caja4 {
+    order: 1;
+    flex-basis: calc(100% - 110px);
+  }
+
+  .caja3 {
+    order: 2;
+    flex-basis: calc(100% - 110px);
+    border-top: solid;
+    border-color: white;
+    border-width: 1px;
+  }
+
+  .caja2 {
+    flex-basis: 55px;
+    order: 4;
+    border-top: solid;
+    border-color: white;
+    border-width: 1px;
+  }
+
+  .box-carousel {
+    width: 250px;
+  }
+
+  .box-carousel-hourly {
+    min-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .content {
+    margin-top: 153px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
